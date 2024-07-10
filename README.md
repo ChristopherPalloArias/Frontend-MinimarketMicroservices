@@ -11,18 +11,15 @@
    - [Proposed Solution](#proposed-solution)
    - [Backend](#backend)
    - [Frontend](#frontend)
-2. [Benefits of Using Microservices](#benefits-of-using-microservice)
-3. [Installation](#installation)
+2. [Installation](#installation)
    - [Requirements](#requirements)
    - [Clone the Repository](#clone-the-repository)
    - [Install Dependencies](#install-dependencies)
+3. [Program Execution](#program-execution)
    - [Run the Application](#run-the-application)
-   - [Evidence](#evidence)
-4. [Program Execution](#program-execution)
-   - [Create Docker Image](#create-docker-image)
-5. [DockerHub](#dockerhub)
+4. [DockerHub](#dockerhub)
    - [DockerHub Repository](#dockerhub-repository)
-6. [AWS ECR, EC2 Evidences](#aws-ecr-ec2-evidences)
+5. [AWS ECR, EC2 Evidences](#aws-ecr-ec2-evidences)
    - [Configuration](#configuration)
    - [Docker](#docker)
 
@@ -49,13 +46,6 @@ Implement an application based on microservices, divided into two main parts:
 
 - **Web Application:** User interface for administrators to interact with the product service, registering new products and updating the quantity of existing ones.
 
-## Benefits of Using Microservices
-
-1. **Independent Scalability:** Each component of the system can scale independently. For example, if product management requires more resources, only the product service can be scaled without affecting other parts of the system.
-2. **Independent Development and Deployment:** Each microservice can be developed, deployed, and updated independently. This reduces downtime and facilitates the implementation of new features or fixes.
-3. **Maintainability:** The separation of responsibilities into microservices makes the code more modular and easier to maintain. Development teams can work on different services simultaneously without interfering with each other.
-4. **Resilience:** If one microservice fails, it does not necessarily affect the other services. This improves the resilience and availability of the system as a whole.
-
 ## Installation
 
 ### Requirements
@@ -72,27 +62,16 @@ git clone https://github.com/ChristopherPalloArias/Frontend-MinimarketMicroservi
 ```sh
 npm install
 ```
-
+## Program Execution
 ### Run the Application
 ```sh
 npm run dev
 ```
-The application will be available at http://localhost:3001.
-
-### Evidence
-![image](https://github.com/ChristopherPalloArias/Frontend-MinimarketMicroservices/assets/87538474/ef7228b9-e7e1-47c9-adf8-ebb7d39775b2)
-
-## Program Execution
-### Create Docker Image with DockerFile
-```sh
-docker build -t minimarket-frontend .
-```
-![Imagen de WhatsApp 2024-07-08 a las 00 45 24_9145bfe5](https://github.com/ChristopherPalloArias/Frontend-MinimarketMicroservices/assets/87538474/f4e6520c-bc06-4b46-854b-52b6ff55f2f0)
 
 ## DockerHub
 ### DockerHub Repository
 
-[christopherpallo2000/cp-minimarket-frontend](https://hub.docker.com/r/christopherpallo2000/cp-minimarket-frontend)
+https://hub.docker.com/r/christopherpallo2000/cp-minimarket-frontend
 
 Docker Pull Command
 ```sh
